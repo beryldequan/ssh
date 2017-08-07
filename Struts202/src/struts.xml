@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- namespace="/" / 代表根目录 -->
+	<package name="mypackage" namespace="/" extends="struts-default">
+		<action name="logining" class="com.neusoft.action.UserAction">
+			<result name="success">/main.jsp</result>
+			<result name="input">index.jsp</result>
+			<result name="regsuccess">/main.jsp</result>
+			<result name="reginput">/reg.jsp</result>
+		</action>
+	
+	</package>
+</struts>    
